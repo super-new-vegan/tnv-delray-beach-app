@@ -1,5 +1,6 @@
 import Environment from 'react-native-config';
-import InterfaceConfig from 'config/interface';
+import AppConfig from '../config/app';
+import InterfaceConfig from '../config/interface';
 
 /** 
  * ----------------------------------------------------------
@@ -12,6 +13,7 @@ import InterfaceConfig from 'config/interface';
  * @type {object} 
  */
 const Config = {
+    app: AppConfig,
     ui: InterfaceConfig,
     ...Environment,
 };
